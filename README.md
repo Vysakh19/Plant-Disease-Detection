@@ -1,5 +1,7 @@
+
 # Plant-Disease-Detection
-Plant disease detection using CNN and transfer learning (ResNet50) with Grad-CAM explainability and web-based deployment.
+
+Plant disease detection using **CNN** and **transfer learning (ResNet50)** with **Grad-CAM explainability** and **web-based deployment**.
 
 ---
 
@@ -16,24 +18,25 @@ Plant disease detection using CNN and transfer learning (ResNet50) with Grad-CAM
 ## Dataset
 The training dataset was obtained from Kaggle:
 
-https://www.kaggle.com/datasets/emmarex/plantdisease
+[Plant Disease Dataset](https://www.kaggle.com/datasets/emmarex/plantdisease)
 
-Due to GitHub size limitations, the dataset is not included in this repository.
-
-Download the dataset and place it inside the `data/` folder.
+> **Note:** The dataset is not included in this repository due to GitHub size limitations.  
+> Download the dataset and place it inside the `data/` folder.
 
 ---
 
 ## Trained Model
 The final trained model can be downloaded from Google Drive:
 
-https://drive.google.com/drive/folders/18RXM0z0l16i_GwmJuU3K3LEwUmXCr212?usp=sharing
+[Download Model](https://drive.google.com/drive/folders/18RXM0z0l16i_GwmJuU3K3LEwUmXCr212?usp=sharing)
 
-Place the downloaded model file inside the `models/` folder.
+> Place the downloaded model file inside the `models/` folder.
 
 ---
+
 ## Project Structure
 
+```
 project-root/
 ├── app.py
 ├── app_with_gradcam.py
@@ -59,22 +62,24 @@ project-root/
 └── README.md
 ```
 
-- `models/` contains trained model files
-- `data/` contains dataset class folders
-- Folder names inside `data/` are used as class labels
+- `models/` contains trained model files  
+- `data/` contains dataset class folders  
+- Folder names inside `data/` are used as **class labels**
 
 ---
 
 ## How to Run
 
+Run the Streamlit apps:
 
- Run the Streamlit app:
-   ```
-   python -m streamlit run app.py
-   python -m streamlit run app_with_gradcam.py
-   ```
+```bash
+python -m streamlit run app.py
+python -m streamlit run app_with_gradcam.py
+```
+
+> Open the URL displayed in the terminal (usually `http://localhost:8501`) in your browser.
 
 ---
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
